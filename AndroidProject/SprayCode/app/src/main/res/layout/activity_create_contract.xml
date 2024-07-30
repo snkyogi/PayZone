@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/create_contract_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Contractor Email:" />
+
+        <EditText
+            android:id="@+id/contractor_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contractor Email"
+            android:inputType="textPersonName"
+            android:paddingLeft="16dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Pay Rate:" />
+        <EditText
+            android:id="@+id/pay_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pay Rate (£ per hour)"
+            android:inputType="numberDecimal"
+            android:paddingLeft="16dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Payout Interval:" />
+
+        <RadioGroup
+            android:id="@+id/payout_interval_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/payout_minutely"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Every Minute"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/payout_hourly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hourly" />
+
+            <RadioButton
+                android:id="@+id/payout_end_of_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End of Day"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Contract Period:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From:" />
+
+            <EditText
+                android:id="@+id/from_date_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select Date"
+                android:focusable="false"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="To:" />
+
+            <EditText
+                android:id="@+id/to_date_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select Date"
+                android:focusable="false"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Shift window:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From Time:" />
+
+            <EditText
+                android:id="@+id/from_time_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select Time"
+                android:focusable="false"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="To Time:" />
+
+            <EditText
+                android:id="@+id/to_time_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select Time"
+                android:focusable="false"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/work_zone_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Work Zone (Contract Area)"
+        android:textSize="20dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Placeholder for map view -->
+    <fragment
+        android:id="@+id/workzone_selection_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:padding="16dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
+
+

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "506783349319",
+    "project_id": "payzone-e8f95",
+    "storage_bucket": "payzone-e8f95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506783349319:android:d6285997eeae739afdcf62",
+        "android_client_info": {
+          "package_name": "com.example.spraycode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506783349319-m2kplq273dq17qtsl5huiud7g31vhg27.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMfGMxB3OdhpFhk_zPHulefCigBE_2mLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506783349319-m2kplq273dq17qtsl5huiud7g31vhg27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

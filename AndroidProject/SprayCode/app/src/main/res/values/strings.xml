@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SprayCode</string>
+    <string name="default_web_client_id">506783349319-m2kplq273dq17qtsl5huiud7g31vhg27.apps.googleusercontent.com</string>
+    <string name="url_base">http://192.168.0.128:4061</string>
+    <string-array name="spinner_items">
+        <item>123456789012</item>
+        <item>323456789012</item>
+    </string-array>
+</resources>

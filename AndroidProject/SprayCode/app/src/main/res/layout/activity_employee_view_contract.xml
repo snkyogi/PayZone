@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/employee_view_contract_layout"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/publisher_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Publisher Email: " />
+
+    <TextView
+        android:id="@+id/contractor_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Contractor Email: " />
+
+    <TextView
+        android:id="@+id/pay_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Pay Rate: " />
+
+    <TextView
+        android:id="@+id/payout_interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Payout Interval: " />
+
+    <TextView
+        android:id="@+id/contract_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Contract Period: " />
+
+    <TextView
+        android:id="@+id/shift_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Shift Window: " />
+
+    <TextView
+        android:id="@+id/current_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Contract Status: " />
+
+    <TextView
+        android:id="@+id/work_zone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Work Zone: " />
+
+    <fragment
+        android:id="@+id/employer_view_contract_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_weight=".7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/accept_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Accept"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            />
+        <Button
+            android:id="@+id/reject_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Reject"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/payzone_full"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/payzone_full"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SprayCode"
+        tools:targetApi="31">
+        <activity
+            android:name=".CashFlow"
+            android:exported="false" />
+
+        <service
+            android:name=".TrackingService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".ManageBankAccount"
+            android:exported="false" />
+        <activity
+            android:name=".EmployeeViewContract"
+            android:exported="false" />
+        <activity
+            android:name=".EmployerViewContract"
+            android:exported="false" />
+        <activity
+            android:name=".InboundContracts"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".OutboundContracts"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCLxcx05cThpJ4q5ILtD2f5ffOI3B8tqKE" />
+
+        <activity
+            android:name=".WorkZone"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ActiveContract"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".EmployeeDashboard"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ConteactInfo"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".CreateContract"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".EmployerDashboard"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".HomeScreen"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

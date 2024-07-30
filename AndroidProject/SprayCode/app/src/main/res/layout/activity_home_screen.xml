@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/home_screen_main"
+    android:background="#9cadce"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        android:gravity="center">
+        <Button
+            android:id="@+id/outbound_contracts_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Outbount Contracts"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/inbound_contracts_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Inbound Contracts"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/manage_bank_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Account Selection"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/cash_flow_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Cash Flow"
+            android:textSize="18sp"
+            android:padding="16dp" />
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_weight=".7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
